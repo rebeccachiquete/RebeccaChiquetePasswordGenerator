@@ -46,43 +46,43 @@ console.log(special);
 
 
 // IF STATEMENTS (to gather each set into one big string)
-if (lowercase === "yes") {
+if (lowercase === "true") {
   var UserChoice = lowercaseCharacters;
 }
 
 
-if (lowercase === "yes" && uppercase === "yes") {
+if (lowercase === "true" && uppercase === "true") {
 var UserChoice = lowercaseCharacters.concat(uppercaseCharacters);
 } 
-else if (lowercase === "no" && uppercase === "yes") {
+else if (lowercase === "false" && uppercase === "true") {
 var UserChoice = uppercaseCharacters;
 }
 
 
-if (lowercase === "yes" && uppercase === "yes" && numbers === "yes") {
+if (lowercase === "true" && uppercase === "true" && numbers === "true") {
 var UserChoice = lowercaseCharacters.concat(uppercaseCharacters, numberCharacters);
 } 
-else if (lowercase === "yes" && uppercase === "no" && numbers === "yes") {
+else if (lowercase === "true" && uppercase === "false" && numbers === "true") {
   var UserChoice = lowercaseCharacters.concat(numberCharacters);
 } 
-else if (lowercase === "no" && uppercase === "yes" && numbers === "yes") {
+else if (lowercase === "false" && uppercase === "true" && numbers === "true") {
   var UserChoice = uppercaseCharacters.concat(numberCharacters);
 }
-else if (lowercase === "no" && uppercase === "no" && numbers === "yes") {
+else if (lowercase === "false" && uppercase === "false" && numbers === "true") {
   var UserChoice = numberCharacters;
 }
 
 
-if (lowercase === "yes" && uppercase === "yes" && numbers === "yes" && special === "yes") {
+if (lowercase === "true" && uppercase === "true" && numbers === "true" && special === "true") {
   var UserChoice = lowercaseCharacters.concat(lowercaseCharacters, numberCharacters, specialCharacters);
 }
-else if(lowercase === "no" && uppercase === "yes" && number === "yes" && special === "yes") {
+else if(lowercase === "false" && uppercase === "true" && number === "true" && special === "true") {
   var UserChoice = uppercaseCharacters.concat(numberCharacters, specialCharacters);
 }
-else if (lowercase === "no" && uppercase === "no" && numbers === "yes" && special === "yes") {
+else if (lowercase === "false" && uppercase === "false" && numbers === "true" && special === "true") {
   var UserChoice = numberCharacters.concat(specialCharacters);
 }
-else if (lowercase === "no" && uppercase === "no" && numbers === "no" && special === "yes") {
+else if (lowercase === "false" && uppercase === "false" && numbers === "false" && special === "true") {
   var UserChoice = specialCharacters;
 }
 
